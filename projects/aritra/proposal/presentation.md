@@ -65,7 +65,7 @@ To make quaternion versions of the Table Transformer (TATR) model and deploy in 
 
 ---
 
-## Plans
+## Plans Befor Midterm
 
 - 🗸 Understand the GriTS metrics
 - 🗸 Learn about transformers
@@ -73,6 +73,11 @@ To make quaternion versions of the Table Transformer (TATR) model and deploy in 
 - ▢ Understand the TATR model and dataset
 - ▢ LTH on pretrained TATR on the FinTabNet dataset
 - ▢ Compare Finetuned pruned model vs pruned finetuned model
+
+---
+
+## Plans After midterm
+
 - ▢ Make quaternion version of the TATR model
 - ▢ LTH on Quaternion TATR model
 - ▢ Production
