@@ -1,0 +1,125 @@
+% Copyright (c) 2022 by Lars Spreng
+% This work is licensed under the Creative Commons Attribution 4.0 International License. 
+% To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% You can add your packages and commands to the loadslides.tex file. 
+% The files in the folder "styles" can be modified to change the layout and design of your slides.
+% I have included examples on how to use the template below. 
+% Some of it these examples are taken from the Metropolis template.
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+\documentclass[
+11pt,notheorems,hyperref={pdfauthor=Aritra Mukhopadhyay}
+]{beamer}
+
+\input{loadslides.tex} % Loads packages and some defined commands
+
+\title[
+% Text entered here will appear in the bottom middle
+Project proposal
+]{Presentation Title}
+
+\subtitle{Presentation Subtitle}
+
+\author[
+% Text entered here will appear in the bottom left corner
+Aritra Mukhopadhyay
+]{
+    John Doe 
+}
+
+\institute{
+    Author Affiliation, \\
+    University of Author}
+\date{\today}
+
+\begin{document}
+
+% Generate title page
+{
+\setbeamertemplate{footline}{} 
+% \begin{frame}
+%   \titlepage
+% \end{frame}
+}
+\addtocounter{framenumber}{-1}
+
+% You can declare different parts as a parentof sections
+% \begin{frame}{Part I: Demo Presentation Part}
+%     \tableofcontents[part=1]
+% \end{frame}
+% \begin{frame}{Part II: Demo Presentation Part 2}
+%     \tableofcontents[part=2]
+% \end{frame}
+
+% \makepart{Demo Part}
+
+\begin{frame}{\textbf{Neural Networks at a Fraction:} Table Structure Recognition
+}{Aritra Mukhopadhyay}
+\alert{\textbf{Objective}}: To make quaternion versions of the Table Transformer (TATR) model and deploy in a low powered mobile device with limited memory and computational power.
+
+\alert{\textbf{Dataset:}} PubTables-1M, FinTabNet, ICDAR 2013
+
+\alert{\textbf{Baseline models:}} Table Transformer (TATR) model
+
+
+
+% - [End-to-End Object Detection with Transformers (2020)](https://scontent-ccu1-1.xx.fbcdn.net/v/t39.2365-6/154305880_816694605586461_2873294970659239190_n.pdf?_nc_cat=108&ccb=1-7&_nc_sid=3c67a6&_nc_ohc=DkHwrRBBc_cAX-eMpS7&_nc_ht=scontent-ccu1-1.xx&oh=00_AfCVQywPZJ9qTTMxk3f6OzsXUEBE9ASe4JMTKI1zE1gCqQ&oe=64F07EC3)
+%   from *Facebook AI Research (Nicolas Carion, Francisco Massa et al.)*
+% - [GriTS: Grid table similarity metric for table structure recognition](https://arxiv.org/pdf/2203.12555)
+%   from *Microsoft Research (Brandon Smock, Rohith Pesala, Robin Abraham)* (2022)
+% - [Aligning benchmark datasets for table structure recognition](https://arxiv.org/pdf/2303.00716)
+%   from *Microsoft Research (Brandon Smock, Rohith Pesala, Robin Abraham)* (2023)
+
+
+
+\alert{\textbf{Relevant Papers}}:
+\begin{itemize}
+    \item \href{https://scontent-ccu1-1.xx.fbcdn.net/v/t39.2365-6/154305880_816694605586461_2873294970659239190_n.pdf?_nc_cat=108&ccb=1-7&_nc_sid=3c67a6&_nc_ohc=DkHwrRBBc_cAX-eMpS7&_nc_ht=scontent-ccu1-1.xx&oh=00_AfCVQywPZJ9qTTMxk3f6OzsXUEBE9ASe4JMTKI1zE1gCqQ&oe=64F07EC3}{End-to-End Object Detection with Transformers (2020)}\\
+    from \textit{Facebook AI Research (Nicolas Carion, Francisco Massa et al.)}
+
+    \item \href{https://arxiv.org/pdf/2103.12555}{GriTS: Grid table similarity metric for table structure recognition (2022)}\\
+    from \textit{Microsoft Research (Brandon Smock, Rohith Pesala, Robin Abraham)}
+
+    \item \href{https://arxiv.org/pdf/2303.00716}{Aligning benchmark datasets for table structure recognition (2023)}\\
+    from \textit{Microsoft Research (Brandon Smock, Rohith Pesala, Robin Abraham)}
+\end{itemize}
+
+
+% \alert{\textbf{Work Division}}
+% \begin{itemize}
+%     \item \textbf{Aritra:} Reading papers,  Experimenting with models, tackling coding and data hurdles, and analyzing results.
+%     \item \textbf{Adhil:} Reading papers, documenting the project. tuning and experimenting with hyperparameters, and analyzing the results. 
+
+% \end{itemize}
+     
+\end{frame}
+
+
+\begin{frame}{}
+    \alert{\textbf{Midway Plans:}}
+    \begin{itemize}
+        \item Understand the GriTS metrics
+        \item Learn about transformers
+        \item Understand the DE:TR model and pipeline
+        \item Understand the TATR model and dataset
+        \item LTH on pretrained TATR on the FinTabNet dataset
+        \item Compare Finetuned pruned model vs pruned finetuned model
+    \end{itemize}
+
+    \alert{\textbf{Further Plans:}}
+    \begin{itemize}
+        \item Make quaternion version of the TATR model
+        \item LTH on Quaternion TATR model
+        \item Production
+    \end{itemize}
+
+    \alert{\textbf{Expected Results:}}
+
+    Microsoft Lens App will have a better Table Structure Recognition model that will be able to run on low powered mobile devices with limited memory and computational power.
+
+\end{frame}
+
+\end{document}
